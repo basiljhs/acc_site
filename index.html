@@ -233,12 +233,26 @@ h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
 .about__col strong{color:var(--ink-900)}
 .team{display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-4); margin:0}
 .team figure{margin:0; text-align:center}
-.team img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--radius-sm); border:1px solid var(--border); background:var(--grey-100)}
+
+.team img{
+  width: 100%; 
+  aspect-ratio: 4/5; 
+  object-fit: cover; 
+  object-position: center; /* Default for the first image */
+  border-radius: var(--radius-sm); 
+  border: 1px solid var(--border); 
+  background: var(--grey-100);
+}
+
+/* Specifically shift the crop for the second image (team member on the right) */
+.team figure img {
+  object-position: 70% 30%; /* Change the 70% (left/right) to shift where the crop focuses */
+}
+
 .team figcaption{margin-top:12px}
 .team .tname{display:block; font-family:var(--font-head); font-weight:700; color:var(--ink-900); font-size:1.0313rem}
 .team .trole{display:block; font-size:var(--fs-small); color:var(--muted); margin-top:2px}
 .about__cta{display:flex; justify-content:center; margin-top:var(--sp-6)}
-
 /* ============================== צור קשר (רקע כהה) */
 .contact{
   position:relative; color:var(--inverse); padding-block:var(--sp-7);
