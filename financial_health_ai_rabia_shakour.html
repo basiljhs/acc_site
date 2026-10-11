@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>בדיקת הבריאות הפיננסית לעסק | רביע שקור רו"ח</title>
+<style>
+:root{--navy:#081a33;--gold:#c9a44d;--bg:#f5f7fa;--ink:#152033;--muted:#657084;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.hero{background:var(--navy);color:#fff;padding:42px 20px;text-align:center;border-bottom:4px solid var(--gold)}
+.hero h1{margin:0 0 10px;font-size:clamp(28px,5vw,46px)}.hero p{margin:auto;max-width:720px;line-height:1.7;color:#e5eaf1}
+.badge{display:inline-block;color:var(--gold);border:1px solid var(--gold);padding:7px 13px;border-radius:999px;margin-bottom:15px;font-weight:bold}
+.wrap{max-width:900px;margin:28px auto;padding:0 16px}.card{background:#fff;border-radius:18px;padding:26px;box-shadow:0 8px 30px #10204012;margin-bottom:18px}
+h2{margin-top:0;color:var(--navy)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-weight:700;display:block;margin-bottom:7px}.field small{color:var(--muted)}
+input,select{width:100%;padding:13px;border:1px solid #d7dde7;border-radius:10px;font-size:16px;background:#fff;margin-top:6px}
+button{width:100%;padding:15px;border:0;border-radius:11px;background:var(--gold);color:#101827;font-weight:800;font-size:18px;cursor:pointer}
+button:hover{filter:brightness(.96)}#result{display:none}.score{font-size:56px;font-weight:900;color:var(--navy)}
+.meter{height:12px;background:#e9edf3;border-radius:99px;overflow:hidden;margin:10px 0 22px}.meter div{height:100%;background:var(--gold)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.kpi{background:#f7f8fa;padding:14px;border-radius:12px}.kpi b{display:block;font-size:20px;color:var(--navy)}
+.analysis{line-height:1.7}.cta{background:var(--navy);color:#fff;text-align:center}.cta h2{color:#fff}.cta a{display:inline-block;background:var(--gold);color:#101827;text-decoration:none;padding:14px 25px;border-radius:10px;font-weight:800}
+.note{font-size:13px;color:var(--muted);line-height:1.5;margin-top:16px}
+@media(max-width:650px){.grid,.kpis{grid-template-columns:1fr}.card{padding:20px}.hero{padding:32px 16px}}
+</style></head>
+<body>
+<header class="hero">
+<div class="badge">רביע שקור | רואה חשבון וייעוץ עסקי־פיננסי</div>
+<h1>בדיקת הבריאות הפיננסית של העסק</h1>
+<p>העסק עובד — אבל האם המספרים באמת עובדים בשבילך? מלא מספר נתונים וקבל בתוך דקות תמונת מצב ראשונית על רווחיות, תזרים, אשראי ושליטה פיננסית.</p>
+</header>
+<main class="wrap">
+<form id="quiz" class="card">
+<h2>נתחיל במספרים</h2>
+<div class="grid">
+<div class="field"><label>מחזור חודשי ממוצע (₪)</label><input id="rev" type="number" min="0" required></div>
+<div class="field"><label>הוצאות חודשיות לפני משיכת בעלים (₪)</label><input id="exp" type="number" min="0" required></div>
+<div class="field"><label>שכר עובדים מתוך ההוצאות (₪)</label><input id="pay" type="number" min="0" value="0"></div>
+<div class="field"><label>משיכת בעלים חודשית (₪)</label><input id="draw" type="number" min="0" value="0"></div>
+<div class="field"><label>יתרת חשבון בנק עסקי (₪)</label><input id="bank" type="number" value="0"></div>
+<div class="field"><label>מסגרת אשראי (₪)</label><input id="limit" type="number" min="0" value="0"></div>
+<div class="field"><label>ניצול מסגרת כיום (₪)</label><input id="used" type="number" min="0" value="0"></div>
+<div class="field"><label>יתרת הלוואות עסקיות (₪)</label><input id="loans" type="number" min="0" value="0"></div>
+<div class="field"><label>לקוחות שחייבים לעסק (₪)</label><input id="ar" type="number" min="0" value="0"></div>
+<div class="field"><label>חובות לספקים (₪)</label><input id="ap" type="number" min="0" value="0"></div>
+<div class="field"><label>האם אתה יודע כמה העסק הרוויח בחודש האחרון?</label><select id="know"><option value="yes">כן, אני יודע</option><option value="rough">בערך</option><option value="no">לא יודע</option></select></div>
+<div class="field"><label>מספר עובדים</label><input id="employees" type="number" min="0" value="0"></div>
+<div class="field"><label>תחום העסק</label><input id="sector" type="text" placeholder="לדוגמה: מרפאה, משרד עורכי דין, אדריכלות"></div>
+<div class="field"><label>שם</label><input id="name" type="text" placeholder="שם מלא"></div>
+</div>
+<br><button type="submit">חשב את הציון הפיננסי שלי</button>
+<p class="note">הבדיקה היא אינדיקציה ראשונית בלבד ואינה מהווה ייעוץ חשבונאי, מס, אשראי או השקעות.</p>
+</form>
+
+<section id="result" class="card">
+<h2>התמונה הפיננסית הראשונית שלך</h2>
+<div class="score"><span id="score">0</span>/100</div>
+<div id="status"></div><div class="meter"><div id="bar"></div></div>
+<div class="kpis">
+<div class="kpi">רווח תפעולי משוער<b id="profit"></b></div>
+<div class="kpi">שיעור רווח משוער<b id="margin"></b></div>
+<div class="kpi">ניצול אשראי<b id="util"></b></div>
+</div>
+<div class="analysis"><h2 style="margin-top:24px">מה המספרים אומרים?</h2><div id="analysis"></div></div>
+</section>
+
+<section id="cta" class="card cta" style="display:none">
+<h2>רוצה להבין איפה הכסף נתקע?</h2>
+<p>בדיקה קצרה עם רו"ח יכולה לעזור להבין את התמונה ולבנות צעדים מעשיים לשיפור.</p>
+<a id="wa" href="#" target="_blank">שליחת תוצאות ב‑WhatsApp</a>
+<p style="font-size:13px;color:#cbd3df">רביע שקור | רואה חשבון וייעוץ עסקי־פיננסי</p>
+</section>
+</main>
+<script>
+const n=id=>Number(document.getElementById(id).value)||0;
+const fmt=x=>new Intl.NumberFormat('he-IL',{style:'currency',currency:'ILS',maximumFractionDigits:0}).format(x);
+document.getElementById('quiz').addEventListener('submit',e=>{
+ e.preventDefault();
+ const rev=n('rev'),exp=n('exp'),bank=n('bank'),limit=n('limit'),used=n('used'),loans=n('loans'),ar=n('ar'),ap=n('ap'),draw=n('draw');
+ const profit=rev-exp, margin=rev?profit/rev:0, util=limit?used/limit:(used>0?1:0), arDays=rev?ar/rev*30:0;
+ let profitability=0, liquidity=0, credit=0, control=0;
+ if(margin>=.20) profitability=25; else if(margin>=.12) profitability=21; else if(margin>=.05) profitability=15; else if(margin>=0) profitability=9; else profitability=2;
+ const coverage=exp?bank/exp:0;
+ liquidity += coverage>=1?10:coverage>=.5?8:coverage>=.25?5:2;
+ liquidity += arDays<=30?8:arDays<=45?6:arDays<=60?4:1;
+ liquidity += (profit-draw)>=0?7:2;
+ credit += util<=.30?12:util<=.60?9:util<=.80?6:2;
+ const debtMonths=rev?loans/rev:99;
+ credit += debtMonths<=1?8:debtMonths<=3?6:debtMonths<=6?4:1;
+ credit += ap<=rev*.5?5:ap<=rev?3:1;
+ const know=document.getElementById('know').value;
+ control += know==='yes'?15:know==='rough'?9:3;
+ control += document.getElementById('sector').value.trim()?5:2;
+ control += n('employees')>=0?5:2;
+ let score=Math.max(0,Math.min(100,Math.round(profitability+liquidity+credit+control)));
+ let status=score>=80?'מצב פיננסי ראשוני טוב 🟢':score>=60?'יש מקום לשיפור 🟡':score>=40?'נדרשת תשומת לב 🟠':'נדרש טיפול פיננסי 🔴';
+ let points=[];
+ if(margin<.05) points.push('הרווחיות המשוערת נמוכה ביחס למחזור. כדאי לבדוק תמחור, עלויות והוצאות קבועות.');
+ else points.push('העסק מציג רווחיות תפעולית חיובית לפי הנתונים שהוזנו.');
+ if(util>.8) points.push('ניצול מסגרת האשראי גבוה. מומלץ לבחון תזרים ומבנה אשראי לפני שנוצר לחץ נוסף.');
+ else points.push('ניצול מסגרת האשראי אינו מצביע כרגע על לחץ חריג לפי הנתונים שהוזנו.');
+ if(arDays>45) points.push('חובות הלקוחות גבוהים ביחס למחזור. שיפור הגבייה עשוי לשחרר מזומן לעסק.');
+ if(profit-draw<0) points.push('משיכת הבעלים גבוהה מהרווח התפעולי המשוער ועלולה ללחוץ על התזרים.');
+ if(know!=='yes') points.push('חסרה שליטה מלאה ברווח החודשי. מומלץ לקבוע מעקב חודשי קבוע אחרי רווח, תזרים וחובות.');
+ if(points.length<3) points.push('מומלץ לבנות תחזית תזרים ל־13 שבועות כדי לזהות עומסים מראש.');
+ document.getElementById('score').textContent=score;
+ document.getElementById('status').textContent=status;
+ document.getElementById('bar').style.width=score+'%';
+ document.getElementById('profit').textContent=fmt(profit);
+ document.getElementById('margin').textContent=(margin*100).toFixed(1)+'%';
+ document.getElementById('util').textContent=(util*100).toFixed(0)+'%';
+ document.getElementById('analysis').innerHTML='<ol>'+points.slice(0,4).map(x=>'<li>'+x+'</li>').join('')+'</ol>';
+ const name=document.getElementById('name').value||'לקוח';
+ const msg=`שלום רביע, שמי ${name}. ביצעתי את בדיקת הבריאות הפיננסית. הציון שלי ${score}/100. רווח תפעולי משוער: ${fmt(profit)}, שיעור רווח: ${(margin*100).toFixed(1)}%, ניצול אשראי: ${(util*100).toFixed(0)}%. אשמח לבדיקה מקצועית.`;
+ document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent(msg);
+ document.getElementById('result').style.display='block';document.getElementById('cta').style.display='block';
+ document.getElementById('result').scrollIntoView({behavior:'smooth'});
+});
+</script></body></html>

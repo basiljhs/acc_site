@@ -1,0 +1,978 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>רביע שקור | משרד רואי חשבון – שירותי ראיית חשבון והנהלת חשבונות</title>
+<meta name="description" content="משרד רו״ח רביע שקור – שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס, חשבות שכר, הקמת עסק חדש, פיתוח מחלקת הנהלת חשבונות והלוואות בערבות המדינה, לצד ייעוץ וליווי עסקי־פיננסי ואקדמיה.">
+<meta name="theme-color" content="#0B1F3A">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://chr-cpa.co.il/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="רביע שקור | משרד רואי חשבון – שירותי ראיית חשבון והנהלת חשבונות">
+<meta property="og:description" content="שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס, חשבות שכר, הקמת עסק חדש והלוואות בערבות המדינה.">
+<meta property="og:url" content="https://chr-cpa.co.il/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "משרד רו״ח רביע שקור",
+  "description": "שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס, חשבות שכר, הקמת עסק חדש, פיתוח מחלקת הנהלת חשבונות, הלוואות בערבות המדינה וייעוץ וליווי עסקי־פיננסי.",
+  "url": "https://chr-cpa.co.il/",
+  "telephone": "+972-52-774-2312",
+  "email": "Rabeia@chr-cpa.co.il",
+  "priceRange": "₪₪",
+  "areaServed": "IL",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "רחוב העצמאות 1",
+    "addressLocality": "רמת גן",
+    "addressCountry": "IL"
+  },
+  "openingHours": "Su-Th 09:00-18:00, Fr 09:00-13:00"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   DESIGN TOKENS — משרד רו״ח רביע שקור
+   כמעט־שחור לסמכות · זהב למותג · אפור בהיר למקטעים
+   ============================================================ */
+:root{
+  --ink-900:#0A1420; --ink-850:#0E1A28; --ink-800:#152436;
+  --ink-100:#E6EAEF; --ink-50:#F3F5F8;
+  --gold-600:#A8842B; --gold-500:#C9A227; --gold-400:#E3C766; --gold-100:#FBF3DC;
+  --white:#FFFFFF; --grey-50:#F4F5F7; --grey-100:#EBEEF2;
+  --border:#E1E6EC; --border-dark:rgba(255,255,255,.16);
+  --text:#1A2433; --muted:#5F6C7C; --inverse:#EDF1F6; --inverse-muted:#9FB0C4;
+  --alert:#B3261E;
+
+  --fs-display:clamp(1.85rem,3.9vw,3rem);
+  --fs-h2:clamp(1.5rem,2.6vw,2.125rem);
+  --fs-h3:1.1875rem;
+  --fs-lead:clamp(1.05rem,1.3vw,1.1875rem);
+  --fs-body:1.0625rem; --fs-small:.9375rem;
+
+  --sp-1:4px; --sp-2:8px; --sp-3:16px; --sp-4:24px; --sp-5:32px; --sp-6:48px; --sp-7:76px;
+  --radius-sm:8px; --radius:10px; --radius-lg:16px;
+  --e1:0 1px 2px rgba(10,20,32,.05);
+  --e2:0 2px 4px rgba(10,20,32,.05), 0 14px 32px -16px rgba(10,20,32,.16);
+  --e3:0 26px 60px -24px rgba(10,20,32,.34);
+  --container:1200px;
+  --font-head:"Assistant","Segoe UI","Arial Hebrew",Arial,sans-serif;
+  --font-body:"Heebo","Segoe UI","Arial Hebrew",Arial,sans-serif;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:96px}
+body{
+  margin:0; font-family:var(--font-body); font-size:var(--fs-body); line-height:1.7;
+  color:var(--text); background:var(--white); font-weight:400;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  direction:rtl; text-align:right; overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--font-head); color:var(--ink-900); margin:0 0 var(--sp-3); line-height:1.26; font-weight:700; letter-spacing:0}
+h1{font-size:var(--fs-display); font-weight:800; line-height:1.18}
+h2{font-size:var(--fs-h2)}
+h3{font-size:var(--fs-h3)}
+p{margin:0 0 var(--sp-3); max-width:68ch}
+p:last-child{margin-bottom:0}
+a{color:var(--gold-600); text-decoration:none}
+a:hover{text-decoration:underline; text-underline-offset:3px}
+ul{margin:0; padding:0; list-style:none}
+strong{font-weight:600; color:var(--ink-900)}
+img,svg{max-width:100%}
+address{font-style:normal}
+:focus-visible{outline:3px solid var(--gold-500); outline-offset:2px; border-radius:6px}
+
+h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
+.num{unicode-bidi:isolate; direction:ltr; display:inline-block; font-variant-numeric:tabular-nums}
+
+/* ============================== נגישות */
+.skip{position:absolute; inset-inline-start:-9999px; top:0; background:var(--gold-500); color:var(--ink-900); padding:12px 20px; font-weight:600; z-index:300}
+.skip:focus{inset-inline-start:12px; top:0}
+.visually-hidden{position:absolute!important; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+
+/* ============================== פריסה */
+.container{max-width:var(--container); margin-inline:auto; padding-inline:var(--sp-4)}
+.section{padding-block:var(--sp-7)}
+.section--grey{background:var(--grey-50)}
+.section--tight{padding-block:var(--sp-6)}
+.lead{font-size:var(--fs-lead); color:var(--muted); line-height:1.65}
+
+/* כותרת מקטע ממורכזת עם קו זהב — כמו באתר הייחוס */
+.shead{max-width:760px; margin:0 auto var(--sp-6); text-align:center}
+.shead h2{margin-bottom:0}
+.shead .rule{display:block; width:150px; height:3px; margin:16px auto 0; border-radius:2px;
+  background:linear-gradient(90deg,transparent,var(--gold-500) 18%,var(--gold-400) 50%,var(--gold-500) 82%,transparent)}
+.shead .lead{margin-top:var(--sp-4)}
+
+/* ============================== לוגו */
+.logo{display:inline-flex; align-items:center; gap:11px; min-width:0}
+.logo:hover{text-decoration:none}
+.logo__mark{flex:none; width:58px; height:58px; display:block; border-radius:50%}
+.logo__text{display:flex; flex-direction:column; line-height:1.18; min-width:0}
+.logo__text{overflow:hidden}
+.logo__name{font-family:var(--font-head); font-weight:700; font-size:1.02rem; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.logo__tag{font-size:.7rem; color:var(--inverse-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; letter-spacing:.08em}
+
+/* ============================== הדר כהה: ניווט + לוגו + חיוג */
+.topbar{background:var(--ink-900); color:var(--inverse); position:relative; z-index:120}
+.topbar__in{display:flex; align-items:center; gap:clamp(10px,1.6vw,26px); padding-block:12px; flex-wrap:nowrap; justify-content:space-between}
+.topbar__right{display:flex; align-items:center; gap:var(--sp-3); flex:none; margin-inline-start:auto}
+.topbar__left{display:flex; align-items:center; flex:none; min-width:0}
+.nav{display:block; min-width:0}
+.nav__list{display:flex; align-items:center; gap:clamp(1px,.7vw,11px); flex-wrap:nowrap}
+.nav__item{position:relative}
+.nav__link{display:inline-flex; align-items:center; gap:4px; font-size:.9125rem; font-weight:400; color:var(--inverse); padding:10px 6px; white-space:nowrap}
+.nav__link:hover{color:var(--gold-400); text-decoration:none}
+.nav__link[aria-current="true"]{color:#fff; background:rgba(255,255,255,.08); border-radius:var(--radius-sm); font-weight:600}
+.nav__item--home .nav__link[aria-current="true"]{background:transparent; font-weight:600}
+.nav__link svg{opacity:.85}
+.submenu{
+  position:absolute; top:calc(100% + 6px); inset-inline-start:0; min-width:286px; background:#fff;
+  border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--e3); padding:8px; margin:0;
+  opacity:0; visibility:hidden; transform:translateY(-6px); transition:opacity .16s ease, transform .16s ease, visibility .16s; z-index:130;
+}
+.nav__item:hover > .submenu,.nav__item:focus-within > .submenu{opacity:1; visibility:visible; transform:translateY(0)}
+.submenu a{display:block; padding:10px 12px; border-radius:var(--radius-sm); font-size:.9375rem; color:var(--text); font-weight:500}
+.submenu a:hover{background:var(--ink-50); color:var(--ink-900); text-decoration:none}
+.btn-call{
+  display:inline-flex; align-items:center; gap:8px;
+  background:var(--gold-500); color:var(--ink-900); font-weight:700; font-size:.9375rem;
+  padding:10px 16px; border-radius:var(--radius); white-space:nowrap;
+}
+.btn-call:hover{background:var(--gold-400); color:var(--ink-900); text-decoration:none}
+.burger{display:none; background:transparent; border:1px solid var(--border-dark); border-radius:var(--radius-sm); width:44px; height:44px; color:#fff; cursor:pointer}
+.burger svg{display:block; margin:auto}
+.mobile-nav{background:var(--ink-850); border-top:1px solid var(--border-dark); padding-bottom:var(--sp-4)}
+.mobile-nav[hidden]{display:none}
+.mnav__top{display:block; padding:14px 4px; color:#fff; font-weight:600; border-bottom:1px solid var(--border-dark)}
+.mnav__top:hover{color:var(--gold-400); text-decoration:none}
+.mnav__group{border-bottom:1px solid var(--border-dark)}
+.mnav__group > summary{display:flex; align-items:center; justify-content:space-between; padding:14px 4px; color:#fff; font-weight:600; cursor:pointer; list-style:none}
+.mnav__group > summary::-webkit-details-marker{display:none}
+.mnav__group > summary::after{content:"+"; color:var(--gold-400); font-family:var(--font-head); font-size:1.3rem; line-height:1}
+.mnav__group[open] > summary::after{content:"–"}
+.mnav__sub{padding:0 8px 10px}
+.mnav__sub a{display:block; padding:10px 12px; color:var(--inverse-muted); font-size:.9375rem; border-radius:var(--radius-sm)}
+.mnav__sub a:hover{background:rgba(255,255,255,.06); color:#fff; text-decoration:none}
+
+/* ============================== הירו: תמונת רקע + 3 כרטיסים */
+.hero{position:relative; background:var(--ink-850) url("hero-office.jpg") center 42%/cover no-repeat; padding-block:var(--sp-6) 0}
+.hero::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,17,27,.84) 0%,rgba(9,17,27,.60) 45%,rgba(9,17,27,.88) 100%)}
+.hero__in{position:relative; z-index:1; display:flex; flex-direction:column; min-height:clamp(420px,52vw,580px); justify-content:flex-end; padding-block:var(--sp-6) 0}
+.hero__eyebrow{display:inline-block; color:var(--gold-400); font-size:.9375rem; font-weight:600; letter-spacing:.08em; margin-bottom:var(--sp-3)}
+.hero h1{color:#fff; max-width:24ch; margin-bottom:var(--sp-3)}
+.hero__sub{color:#D6DEE9; font-size:var(--fs-lead); max-width:60ch}
+.hero__cards{display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-4); margin-top:var(--sp-6); transform:translateY(52px)}
+.hcard{
+  position:relative; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; text-align:center;
+  min-height:236px; padding:var(--sp-5) var(--sp-4); border-radius:var(--radius-lg); overflow:hidden;
+  border:1.5px solid rgba(201,162,39,.72); background:var(--ink-850) center/cover no-repeat; color:#fff; box-shadow:var(--e3);
+  transition:transform .2s ease, border-color .2s ease;
+}
+.hcard::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(9,17,27,.52) 0%,rgba(9,17,27,.72) 55%,rgba(9,17,27,.9) 100%); transition:background .2s ease}
+.hcard > *{position:relative; z-index:1}
+.hcard:hover{transform:translateY(-4px); border-color:var(--gold-400); text-decoration:none}
+.hcard:hover::before{background:linear-gradient(180deg,rgba(9,17,27,.42) 0%,rgba(9,17,27,.64) 55%,rgba(9,17,27,.86) 100%)}
+.hcard--services{background-image:url("images/_T3A9096 (Small).jpg")}
+.hcard--consulting{background-image:url("images/_T3A9038 (Small).jpg")}
+.hcard--academy{background-image:url("images/_T3A9099 (Small).jpg")}
+.hcard__icon{width:52px; height:52px; display:grid; place-items:center; color:var(--gold-400); margin-bottom:var(--sp-3)}
+.hcard__icon svg{width:40px; height:40px}
+.hcard__title{font-family:var(--font-head); font-weight:700; font-size:1.1875rem; color:#fff; line-height:1.4}
+.hcard__more{font-size:.875rem; color:var(--gold-400); font-weight:600; margin-top:10px}
+.hero__spacer{height:52px; background:var(--white)}
+
+/* ============================== כפתורים */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  min-height:46px; padding:12px 24px; border-radius:var(--radius); border:1.5px solid transparent;
+  font-family:var(--font-body); font-size:.9375rem; font-weight:700; cursor:pointer; text-align:center; line-height:1.3;
+  transition:background-color .18s ease, transform .18s ease, box-shadow .18s ease, border-color .18s ease, color .18s ease;
+}
+.btn:hover{text-decoration:none}
+.btn--gold{background:var(--gold-500); color:var(--ink-900); min-width:132px}
+.btn--gold:hover{background:var(--gold-400); color:var(--ink-900); transform:translateY(-1px); box-shadow:0 12px 26px -14px rgba(201,162,39,.85)}
+.btn-row{display:flex; flex-wrap:wrap; gap:var(--sp-3); align-items:center}
+
+/* ============================== כרטיסי שירותים (3×2) */
+.cards3{display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-4)}
+.scard{
+  padding:.3rem;
+  display:flex; flex-direction:column; background:#fff; border:1px solid var(--border);
+  border-radius:var(--radius-sm); box-shadow:var(--e1); height:100%; overflow:hidden;
+  transition:box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+}
+.scard__media{margin:0; background:var(--grey-100); aspect-ratio:16/9; overflow:hidden}
+.scard__media img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .45s ease}
+.scard:hover .scard__media img{transform:scale(1.04)}
+.scard__body{display:flex; flex-direction:column; align-items:center; text-align:center; flex:1; padding:var(--sp-4) var(--sp-4) var(--sp-4)}
+.scard:hover{box-shadow:var(--e2); transform:translateY(-2px); border-color:#CFD8E2}
+.scard__icon{width:48px; height:48px; display:grid; place-items:center; color:var(--ink-900); margin-bottom:var(--sp-3)}
+.scard__icon svg{width:38px; height:38px}
+.scard h3{margin-bottom:10px; font-size:1.25rem}
+.scard h3::after{content:""; display:block; width:74px; height:3px; margin:10px auto 0; border-radius:2px;
+  background:linear-gradient(90deg,transparent,var(--gold-500) 20%,var(--gold-400) 50%,var(--gold-500) 80%,transparent)}
+.scard p{font-size:var(--fs-small); color:var(--muted); margin-bottom:var(--sp-4); max-width:44ch}
+.scard .btn{margin-top:auto}\n@media (prefers-reduced-motion:reduce){.scard__media img{transition:none}}
+
+/* ============================== אודות המשרד */
+.about{display:grid; grid-template-columns:1fr 1.2fr 1fr; gap:var(--sp-6); align-items:start}
+.about__col p{font-size:var(--fs-small); color:var(--muted); margin-bottom:var(--sp-4); text-align:justify}
+.about__col p:last-child{margin-bottom:0}
+.about__col strong{color:var(--ink-900)}
+.team{display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-4); margin:0}
+.team figure{margin:0; text-align:center}
+.team img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--radius-sm); border:1px solid var(--border); background:var(--grey-100)}
+.team figcaption{margin-top:12px}
+.team .tname{display:block; font-family:var(--font-head); font-weight:700; color:var(--ink-900); font-size:1.0313rem}
+.team .trole{display:block; font-size:var(--fs-small); color:var(--muted); margin-top:2px}
+.about__cta{display:flex; justify-content:center; margin-top:var(--sp-6)}
+
+/* ============================== צור קשר (רקע כהה) */
+.contact{
+  position:relative; color:var(--inverse); padding-block:var(--sp-7);
+  background:
+    radial-gradient(1000px 500px at 78% -10%, rgba(201,162,39,.10), transparent 62%),
+    linear-gradient(150deg,#141C26 0%,#0B1119 55%,#171F2B 100%);
+}
+.contact::before{content:""; position:absolute; inset:0; background-image:var(--grain); opacity:.16; pointer-events:none; mix-blend-mode:overlay}
+.contact__in{position:relative; z-index:1; display:grid; grid-template-columns:1fr 1.15fr; gap:var(--sp-6); align-items:center}
+.contact h2{color:var(--gold-500); margin-bottom:var(--sp-4); font-size:clamp(1.5rem,2.4vw,2rem)}
+.contact__pitch{color:#fff; font-family:var(--font-head); font-weight:700; font-size:clamp(1.15rem,1.7vw,1.5rem); line-height:1.45; margin:0; max-width:26ch}
+.contact__meta{margin-top:var(--sp-5)}
+.contact__meta li{display:flex; gap:10px; align-items:center; color:var(--inverse); margin-bottom:10px}
+.contact__meta svg{color:var(--gold-400); flex:none}
+.contact__meta a{color:#fff}
+.contact__form{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.contact__form .field{margin:0}
+.field label{display:block; font-size:.875rem; font-weight:600; color:var(--ink-800); margin-bottom:6px}
+.field .req{color:var(--alert)}
+.field input,.field select,.field textarea{
+  width:100%; min-height:50px; padding:13px 15px; font-family:var(--font-body); font-size:1rem; color:var(--text);
+  background:#fff; border:1.5px solid transparent; border-radius:var(--radius-sm);
+  transition:box-shadow .15s ease, border-color .15s ease;
+}
+.field textarea{line-height:1.6}
+.field input[type=tel]{direction:ltr; text-align:right}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none; border-color:var(--gold-500); box-shadow:0 0 0 3px rgba(201,162,39,.35)}
+.field--error input,.field--error select,.field--error textarea{border-color:#E88}
+.field__err{display:none; color:#FFC9C4; font-size:.8125rem; margin-top:6px; font-weight:500}
+.field--error .field__err{display:block}
+.contact__form textarea{min-height:150px; resize:vertical; grid-column:1 / -1}
+.contact__form .btn{grid-column:1 / -1}
+.consent{grid-column:1 / -1; display:flex; gap:10px; align-items:flex-start; font-size:.8125rem; color:var(--inverse-muted)}
+.consent input{width:19px; height:19px; min-height:0; flex:none; margin-top:3px; accent-color:var(--gold-500)}
+.form-success{grid-column:1 / -1; display:none; background:rgba(255,255,255,.08); border:1px solid rgba(201,162,39,.5); border-radius:var(--radius); padding:20px; text-align:center; color:#fff}
+.form-success h3{color:#fff; font-size:1.0625rem; margin-bottom:6px}
+.form-success p{font-size:var(--fs-small); color:var(--inverse-muted); margin:0; max-width:none}
+.is-sent .form-body{display:none}
+.is-sent .form-success{display:block}
+
+/* ============================== פוטר כהה — 4 טורים */
+.footer{background:var(--ink-900); color:var(--inverse-muted); padding-block:var(--sp-6) var(--sp-4); font-size:var(--fs-small)}
+.footer__grid{display:grid; grid-template-columns:repeat(4,1fr); gap:var(--sp-5)}
+.footer__col h3{color:#fff; font-size:1rem; font-weight:700; margin-bottom:var(--sp-3); text-align:center; line-height:1.4}
+.footer__col li{text-align:center; margin-bottom:9px}
+.footer a{color:var(--inverse)}
+.footer a:hover{color:var(--gold-400)}
+.footer__brand{display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px}
+.footer__brand .logo{flex-direction:column; gap:10px}
+.footer__brand .logo__text{align-items:center}
+.footer__bottom{border-top:1px solid var(--border-dark); margin-top:var(--sp-6); padding-top:var(--sp-4); display:flex; justify-content:space-between; gap:var(--sp-3); flex-wrap:wrap; align-items:center; font-size:.8125rem}
+.disclaimer{background:rgba(255,255,255,.04); border-inline-start:3px solid var(--gold-500); border-radius:var(--radius) 0 0 var(--radius); padding:13px 16px; margin-top:var(--sp-5); font-size:.8125rem; line-height:1.6}
+
+/* ============================== וואטסאפ צף */
+.float-wa{position:fixed; bottom:20px; inset-inline-start:20px; z-index:110; width:54px; height:54px; border-radius:50%; background:#25D366; color:#fff; display:grid; place-items:center; box-shadow:0 12px 28px -10px rgba(37,211,102,.7)}
+.float-wa:hover{background:#1EBE5A; text-decoration:none}
+
+/* ============================== רספונסיביות */
+@media (max-width:1360px){
+  .logo__mark{width:50px; height:50px}
+  .logo__name{font-size:.9688rem}
+  .logo__tag{font-size:.66rem}
+  .logo{gap:9px}
+}
+@media (max-width:1240px){
+  .logo__tag{display:none}
+  .nav__link{padding:9px 5px; font-size:.8875rem}
+  .topbar__in{gap:12px}
+}
+@media (max-width:1000px){
+  :root{--sp-7:56px}
+  .about{grid-template-columns:1fr 1fr; gap:var(--sp-5)}
+  .about__col--r{grid-column:1 / -1}
+  .contact__in{grid-template-columns:1fr; gap:var(--sp-5)}
+  .contact__pitch{max-width:none}
+  .cards3{grid-template-columns:repeat(2,1fr)}
+  .footer__grid{grid-template-columns:1fr 1fr}
+  .nav{display:none}
+  .burger{display:block}
+}
+@media (max-width:760px){
+  .hero__cards{grid-template-columns:1fr; transform:translateY(34px)}
+  .hcard{min-height:190px}
+  .hero__spacer{height:34px}
+  .hcard{min-height:0; padding:var(--sp-4)}
+  .hcard__icon{margin-bottom:var(--sp-3)}
+  .hcard__title{margin-bottom:0}
+  .contact__form{grid-template-columns:1fr}
+  .contact__form textarea,.contact__form .btn,.consent,.form-success{grid-column:auto}
+  .about{grid-template-columns:1fr}
+  .team{max-width:460px; margin-inline:auto}
+}
+@media (max-width:640px){
+  :root{--sp-7:42px; --sp-6:30px}
+  body{font-size:1rem}
+  .container{padding-inline:20px}
+  .cards3,.team,.footer__grid{grid-template-columns:1fr}
+  .hero__in{min-height:clamp(350px,72vw,450px)}
+  .logo__mark{width:46px; height:46px}
+  .btn-call{padding:10px 14px; font-size:.9375rem}
+  .footer__bottom{flex-direction:column; align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important; transition:none !important}
+}
+@media print{.topbar,.float-wa,.mobile-nav,.hero::before{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דלג לתוכן הראשי</a>
+
+<!-- ================= 1. הדר כהה ================= -->
+<div class="topbar">
+  <div class="container topbar__in">
+    <div class="topbar__left">
+      <a class="logo" href="#top" aria-label="משרד רו״ח רביע שקור – חזרה לראש העמוד">
+        <img class="logo__mark" src="logo-mark-112.png" width="112" height="112" alt="" decoding="async">
+        <span class="logo__text">
+          <span class="logo__name">רביע שקור · משרד רואי חשבון</span>
+          <span class="logo__tag">RABEA SHAKOUR · C.P.A OFFICE</span>
+        </span>
+      </a>
+    </div>
+
+    <nav class="nav" id="primary-nav" aria-label="ניווט ראשי">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--home"><a class="nav__link" href="#top" aria-current="true">דף הבית</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#services" aria-haspopup="true" aria-expanded="false">
+            השירותים שלנו
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <ul class="submenu">
+            <li><a href="#s-accounting">ראיית חשבון</a></li>
+            <li><a href="#s-bookkeeping">הנהלת חשבונות</a></li>
+            <li><a href="#s-tax">ייעוץ מס</a></li>
+            <li><a href="#s-payroll">חשבות שכר</a></li>
+            <li><a href="#s-newbusiness">הקמת עסק חדש</a></li>
+            <li><a href="#s-department">פיתוח מחלקת הנהלת חשבונות</a></li>
+            <li><a href="#s-loans">הלוואות בערבות המדינה</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#consulting" aria-haspopup="true" aria-expanded="false">
+            ייעוץ וליווי עסקי – פיננסי
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <ul class="submenu">
+            <li><a href="#c-map">מודל מפה – ייעוץ עסקי טורבו</a></li>
+            <li><a href="#c-11">ליווי וייעוץ עסקי פיננסי 1:1</a></li>
+            <li><a href="#c-gaps">בדיקת חוסרים בהנהלת חשבונות</a></li>
+            <li><a href="financial_health_ai_rabia_shakour.html">בדיקת בריאות פיננסית לעסק</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#academy">אקדמיה</a></li>
+        <li class="nav__item"><a class="nav__link" href="#media">מן התקשורת</a></li>
+        <li class="nav__item"><a class="nav__link" href="#tips">טיפים</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact">צור קשר</a></li>
+      </ul>
+    </nav>
+
+    <div class="topbar__right">
+      <a class="btn-call" href="tel:+972527742312">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .7-.2 1l-2.3 2.1z"/></svg>
+        <span>חייג עכשיו</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mobile-nav">
+        <svg id="burger-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="burger-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" hidden><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <div class="container">
+      <a class="mnav__top" href="#top">דף הבית</a>
+      <details class="mnav__group">
+        <summary>השירותים שלנו</summary>
+        <ul class="mnav__sub">
+          <li><a href="#s-accounting">ראיית חשבון</a></li>
+          <li><a href="#s-bookkeeping">הנהלת חשבונות</a></li>
+          <li><a href="#s-tax">ייעוץ מס</a></li>
+          <li><a href="#s-payroll">חשבות שכר</a></li>
+          <li><a href="#s-newbusiness">הקמת עסק חדש</a></li>
+          <li><a href="#s-department">פיתוח מחלקת הנהלת חשבונות</a></li>
+          <li><a href="#s-loans">הלוואות בערבות המדינה</a></li>
+        </ul>
+      </details>
+      <details class="mnav__group">
+        <summary>ייעוץ וליווי עסקי – פיננסי</summary>
+        <ul class="mnav__sub">
+          <li><a href="#c-map">מודל מפה – ייעוץ עסקי טורבו</a></li>
+          <li><a href="#c-11">ליווי וייעוץ עסקי פיננסי 1:1</a></li>
+          <li><a href="#c-gaps">בדיקת חוסרים בהנהלת חשבונות</a></li>
+          <li><a href="financial_health_ai_rabia_shakour.html">בדיקת בריאות פיננסית לעסק</a></li>
+        </ul>
+      </details>
+      <a class="mnav__top" href="#academy">אקדמיה</a>
+      <a class="mnav__top" href="#media">מן התקשורת</a>
+      <a class="mnav__top" href="#tips">טיפים</a>
+      <a class="mnav__top" href="#contact">צור קשר</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ================= 2. הירו + 3 כרטיסים ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero__in">
+    <span class="hero__eyebrow">משרד רו״ח רביע שקור</span>
+    <h1 id="hero-title">שירותי ראיית חשבון והנהלת חשבונות ברמה הגבוהה ביותר</h1>
+    <p class="hero__sub">
+      משרד רואי חשבון המלווה עסקים ועצמאים בישראל: ספרים מסודרים, דיווחים בזמן,
+      תכנון מס מראש וייעוץ פיננסי שמאפשר לקבל החלטות על בסיס מספרים.
+    </p>
+
+    <div class="hero__cards">
+      <a class="hcard hcard--services" href="#services">
+        <span class="hcard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="6" width="22" height="36" rx="3"/><path d="M19 15h10M19 22h10M19 29h6"/><circle cx="30" cy="33" r="2.5"/></svg>
+        </span>
+        <span class="hcard__title">שירותי המשרד</span>
+        <span class="hcard__more">לפרטים ←</span>
+      </a>
+
+      <a class="hcard hcard--consulting" href="#consulting">
+        <span class="hcard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="16" r="5"/><path d="M8 38c0-5.5 4.5-9 10-9s10 3.5 10 9"/><circle cx="33" cy="21" r="4"/><path d="M28 38c0-4 2.5-7 7-7 3 0 5 2 5 7"/></svg>
+        </span>
+        <span class="hcard__title">ייעוץ וליווי עסקי – פיננסי</span>
+        <span class="hcard__more">לפרטים ←</span>
+      </a>
+
+      <a class="hcard hcard--academy" href="#academy">
+        <span class="hcard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 10l16 8-16 8-16-8 16-8z"/><path d="M14 22v8c0 2.8 4.5 5 10 5s10-2.2 10-5v-8"/></svg>
+        </span>
+        <span class="hcard__title">אקדמיה</span>
+        <span class="hcard__more">לפרטים ←</span>
+      </a>
+    </div>
+  </div>
+</section>
+<div class="hero__spacer" aria-hidden="true"></div>
+
+<!-- ================= 3. השירותים שלנו ================= -->
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="shead">
+      <h2 id="services-title">השירותים שלנו</h2>
+      <span class="rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="cards3">
+      <article class="scard" id="s-tax">
+        <figure class="scard__media">
+          <img src="images/_T3A9099 (Small).jpg" width="320" height="480" loading="lazy" decoding="async" alt="מדפי תיקים במשרד רואי החשבון – תיעוד וניהול לקוחות">
+        </figure>
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h20v27l-4-3-4 3-4-3-4 3-4-3V6z"/><path d="M20 13h8M20 19h8M20 25h5"/></svg>
+        </span>
+        <h3>ייעוץ מס</h3>
+        <p>משרדנו נותן שירות ייעוץ מס מלא ומקיף לכל סוגי הפעילות העסקית בישראל — תכנון מס שוטף, בחינת מבנה הפעילות ומיצוי ההטבות המגיעות לכם.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+
+      <article class="scard" id="s-bookkeeping">
+        <figure class="scard__media">
+          <img src="images/_T3A9103 (Small).jpg" width="320" height="480" loading="lazy" decoding="async" alt="ארכיון תיקי הנהלת חשבונות מסודר על מדפים">
+        </figure>
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v7M20 13h5.5a4.5 4.5 0 010 9h-3a4.5 4.5 0 000 9H28"/><path d="M12 38h24"/></svg>
+        </span>
+        <h3>הנהלת חשבונות</h3>
+        <p>הנהלת חשבונות תקינה ומעודכנת היא כלי אפקטיבי מאוד בניהול תקין ושוטף של עסק בריא. משרדנו מעניק שירותי הנהלת חשבונות לכל סוגי העסקים.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+
+      <article class="scard" id="s-accounting">
+        <figure class="scard__media">
+          <img src="images/_T3A9130 (Small).jpg" width="720" height="480" loading="lazy" decoding="async" alt="תעודת חבר בלשכת רואי חשבון בישראל של רביע שקור">
+        </figure>
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="3"/><path d="M17 16h14M17 23h6M17 30h6M28 23h3M28 30h3"/></svg>
+        </span>
+        <h3>ראיית חשבון</h3>
+        <p>אנו מבצעים שירותי ביקורת ועריכת דוחות כספיים הכוללים מאזנים, דוחות רווח והפסד, תזרימי מזומנים ודוחות התאמה למס לכל סוגי החברות והעמותות במשק.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+
+      <article class="scard" id="s-loans">
+        <figure class="scard__media">
+          <img src="images/_T3A9050 (Small).jpg" width="720" height="480" loading="lazy" decoding="async" alt="אזור קבלת לקוחות במשרד – פגישת ייעוץ ללקוחות">
+        </figure>
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8v32"/><path d="M33 15c0-3.5-4-6-9-6s-9 2.5-9 6 4 5.5 9 6.5 9 3 9 6.5-4 6-9 6-9-2.5-9-6"/><path d="M12 12l-3 5M36 12l3 5"/></svg>
+        </span>
+        <h3>הלוואות בערבות המדינה</h3>
+        <p>הלוואה בערבות מדינה היא הלוואה לעסק שמבנק מאשר לאחר קבלת ערבות מהמדינה. משרדנו מגיש עבורכם תוכניות עסקיות ובקשות למתן הלוואות לכל סוגי העסקים.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+
+      <article class="scard" id="s-newbusiness">
+        <figure class="scard__media">
+          <img src="images/_T3A9096 (Small).jpg" width="720" height="480" loading="lazy" decoding="async" alt="חלל משרד חדש ומסודר – ליווי בהקמת עסק">
+        </figure>
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20L24 8l16 12"/><path d="M12 20v18M36 20v18M20 38V28h8v10M6 38h36"/></svg>
+        </span>
+        <h3>הקמת עסק חדש</h3>
+        <p>בהקמת עסק חדש יש צורך בהבנה של הסביבה העסקית והבנה פיננסית רחבה. משרדנו נותן את כל הליווי והתמיכה הפיננסית והעסקית להקמת עסק חדש.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+
+      <article class="scard" id="s-payroll">
+        <figure class="scard__media">
+          <img src="images/_T3A9048 (Small).jpg" width="320" height="480" loading="lazy" decoding="async" alt="עמדת עבודה במשרד – הפקת תלושי שכר ודיווחים">
+        </figure>
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="32" rx="3"/><circle cx="24" cy="19" r="4"/><path d="M17 32c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M33 14h4v6h-4"/></svg>
+        </span>
+        <h3>חשבות שכר</h3>
+        <p>העסקת עובדים טומנת בחובה אחריות רבה מצד המעביד. משרדנו נותן שירות הכולל הפקת תלושי שכר, חישובים סוציאליים ודיווח מלא לרשויות.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+      <article class="scard" id="s-department">
+        <figure class="scard__media">
+          <img src="images/_T3A9064 (Small).jpg" width="320" height="480" loading="lazy" decoding="async" alt="חלל העבודה במשרד – בניית מחלקת הנהלת חשבונות">
+        </figure>
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40V16l10-6v30M20 40h20V22l-10-3.5"/><path d="M15 20v.01M15 26v.01M15 32v.01M26 26v.01M26 32v.01M31 26v.01M31 32v.01"/></svg>
+        </span>
+        <h3>פיתוח מחלקת הנהלת חשבונות</h3>
+        <p>לעסקים שגדלו מעבר לניהול של אדם אחד: בניית מחלקת הנהלת חשבונות מסודרת — תהליכי עבודה, חלוקת תפקידים, נהלי בקרה פנימית וליווי הצוות.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3ב. ייעוץ וליווי עסקי – פיננסי ================= -->
+<section class="section section--tight section--grey" id="consulting" aria-labelledby="consulting-title">
+  <div class="container">
+    <div class="shead">
+      <h2 id="consulting-title">ייעוץ וליווי עסקי – פיננסי</h2>
+      <span class="rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="cards3">
+      <article class="scard" id="c-map">
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8L8 12v28l10-4 12 4 10-4V8l-10 4-12-4z"/><path d="M18 8v28M30 12v28"/></svg>
+        </span>
+        <h3>מודל מפה – ייעוץ עסקי טורבו</h3>
+        <p>תהליך מובנה שבו ממפים את העסק מקצה לקצה: מקורות הכנסה, רווחיות לפי פעילות, עלויות קבועות ומשתנות ונקודות החולשה שמייצרות עומס תזרימי — ומתרגמים אותן לתוכנית פעולה.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+
+      <article class="scard" id="c-11">
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="16" r="6"/><path d="M12 40c0-6.6 5.4-12 12-12s12 5.4 12 12"/></svg>
+        </span>
+        <h3>ליווי וייעוץ עסקי פיננסי <span class="num">1:1</span></h3>
+        <p>פגישות סדירות עם בעל העסק בקצב שמתאים לכם: מעבר על המספרים, הנחות עבודה, תמחור, גיוס עובדים, אשראי והשקעות — עם רואה חשבון שמכיר את התיק.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+
+      <article class="scard" id="c-gaps">
+        <div class="scard__body">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="21" cy="21" r="12"/><path d="M30 30l9 9"/><path d="M16 21l4 4 8-8"/></svg>
+        </span>
+        <h3>בדיקת חוסרים בהנהלת חשבונות</h3>
+        <p>בדיקה יזומה של מערכת הנהלת החשבונות: מסמכים חסרים, התאמות שלא בוצעו, דיווחי מע״מ, ניכויים והפרשות סוציאליות — לפני שהרשות מגלה אותם.</p>
+        <a class="btn btn--gold" href="#contact">לחץ כאן ←</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="btn-row" style="justify-content:center; margin-top:var(--sp-5)">
+      <a class="btn btn--gold" href="financial_health_ai_rabia_shakour.html">בדיקת בריאות פיננסית לעסק ←</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3ג. אקדמיה, מן התקשורת וטיפים ================= -->
+<section class="section section--tight" id="academy" aria-labelledby="academy-title">
+  <div class="container">
+    <div class="shead">
+      <h2 id="academy-title">אקדמיה, מן התקשורת וטיפים</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="lead">
+        ידע מקצועי שעובד בשבילכם: הדרכות לבעלי עסקים ולמנהלי חשבונות, פרשנות לשינויי חקיקה,
+        וטיפים מעשיים שיחסכו לכם כסף.
+      </p>
+    </div>
+
+    <div class="cards3">
+      <article class="scard">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l16 8-16 8-16-8 16-8z"/><path d="M14 20v9c0 2.8 4.5 5 10 5s10-2.2 10-5v-9"/></svg>
+        </span>
+        <h3>אקדמיה</h3>
+        <p>תכנים והדרכות לבעלי עסקים, לעצמאים ולמנהלי חשבונות: מניהול ספרים ותמחור נכון ועד תזרים ובקרה פיננסית — הידע שאנחנו מיישמים בתיקים.</p>
+      </article>
+
+      <article class="scard" id="media">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="32" height="24" rx="3"/><path d="M14 18h12M14 24h20M14 30h8"/></svg>
+        </span>
+        <h3>מן התקשורת</h3>
+        <p>פרשנות לשינויי חקיקה, מאמרים מקצועיים וראיונות בנושאי מיסוי, תעסוקה ואשראי לעסקים — בשפה של בעלי עסקים.</p>
+      </article>
+
+      <article class="scard" id="tips">
+        <span class="scard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 36h12M20 42h8"/><path d="M24 6a11 11 0 00-6.4 20c.7.5 1.4 1.6 1.4 2.5V30h10v-1.5c0-.9.7-2 1.4-2.5A11 11 0 0024 6z"/></svg>
+        </span>
+        <h3>טיפים מקצועיים</h3>
+        <p>טיפים לפי נושא: התנהלות פיננסית נכונה, הלוואות והתנהגות מול הבנק ומסעדנות — כדי שתדעו לזהות בעיות לפני שהן הופכות לעלות.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. אודות המשרד ================= -->
+<section class="section section--grey" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="shead">
+      <h2 id="about-title">אודות המשרד</h2>
+      <span class="rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="about">
+      <div class="about__col">
+        <p>
+          <strong>משרד רו״ח רביע שקור</strong> נותן שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס
+          וחשבות שכר לקהל לקוחות מגוון: עסקים קטנים ובינוניים, חברות בע״מ, עצמאים,
+          עמותות ובעלי מקצוע חופשיים.
+        </p>
+        <p>
+          אנו שמים דגש על <strong>יחס אישי וזמינות</strong> לאורך כל השנה — לא רק סביב מועדי הדיווח —
+          ומלווים את הלקוח בקבלת החלטות, בתמחור, בתזרים ובתכנון מס מראש.
+        </p>
+        <p>
+          הניסיון הרב שלנו בעולם העסקי והכלכלי מאפשר לנו לספק מענה מקצועי ומדויק,
+          ולהציע פתרונות מותאמים לכל לקוח בהתאם לפעילותו ולהיקפה.
+        </p>
+      </div>
+
+      <div>
+        <div class="team">
+          <figure>
+            <img src="images/_T3A9038 (Small).jpg" width="720" height="480" loading="lazy" decoding="async"
+                 alt="רואה החשבון של המשרד בשיחת טלפון עם לקוח">
+            <figcaption>
+              <span class="tname">רו״ח רביע שקור</span>
+              <span class="trole">שותף מייסד</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/_T3A9103 (Small).jpg" width="320" height="480" loading="lazy" decoding="async"
+                 alt="חברת צוות במשרד רואי החשבון בעבודה על תיק לקוח">
+            <figcaption>
+              <span class="tname">צוות המשרד</span>
+              <span class="trole">ראיית חשבון וליווי לקוחות</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="about__col about__col--r">
+        <p>
+          <strong>חזון המשרד:</strong> משרדנו שם לנגד עיניו את טובת הלקוח, ועושה כמיטב יכולתו על מנת
+          לקדם את ענייני הלקוח בכל תחומי פעילותו, תוך הקפדה מתמדת ובלתי מתפשרת על
+          מקצועיות ורמת שירות גבוהה.
+        </p>
+        <p>
+          משרדנו רואה בהצלחת לקוחותיו אינטרס משותף גם לנו — בבחינת הצלחתכם היא הצלחתנו.
+          אנו רואים במשרדנו בית משפחתי חם ללקוחותינו, במלוא מובן המילה: הן מבחינה מקצועית
+          והן מבחינה אישית, ועומדים תמיד לרשות לקוחותינו.
+        </p>
+      </div>
+    </div>
+
+    <div class="about__cta">
+      <a class="btn btn--gold" href="#contact">קרא עוד ←</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. צור עמנו קשר ================= -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="container contact__in">
+    <div>
+      <h2 id="contact-title">צור עמנו קשר</h2>
+      <p class="contact__pitch">
+        לפגישת ייעוץ ללא התחייבות<br>
+        השאירו פרטים ונחזור אליכם
+      </p>
+
+      <ul class="contact__meta">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.7 3.7 4 4.5 4h2.2c.7 0 1.3.5 1.5 1.2l.7 2.6c.1.6-.1 1.2-.6 1.5l-1.2.8a12 12 0 006.8 6.8l.8-1.2c.3-.5.9-.7 1.5-.6l2.6.7c.7.2 1.2.8 1.2 1.5v2.2c0 .8-.7 1.5-1.5 1.5H15C8.4 21 3 15.6 3 9V5.5z"/></svg>
+          <a href="tel:+972527742312"><span class="num" dir="ltr">052-774-2312</span></a>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path stroke-linecap="round" d="M3.5 7l8.5 6 8.5-6"/></svg>
+          <a href="mailto:Rabeia@chr-cpa.co.il"><span dir="ltr">Rabeia@chr-cpa.co.il</span></a>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-4.6-7-10a7 7 0 1114 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <address>רחוב העצמאות 1, רמת גן</address>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact__form" action="#" method="post" novalidate>
+      <div class="form-body" style="display:contents">
+        <div class="field">
+          <label for="f-name" class="visually-hidden">שם</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="שם">
+          <p class="field__err">נא למלא שם</p>
+        </div>
+        <div class="field">
+          <label for="f-email" class="visually-hidden">אימייל</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="אימייל">
+        </div>
+        <div class="field">
+          <label for="f-phone" class="visually-hidden">טלפון</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="טלפון">
+          <p class="field__err">נא למלא טלפון</p>
+        </div>
+        <div class="field">
+          <label for="f-msg" class="visually-hidden">הודעה</label>
+          <textarea id="f-msg" name="message" placeholder="הודעה"></textarea>
+        </div>
+        <div class="consent">
+          <input type="checkbox" id="f-consent" name="consent" required>
+          <label for="f-consent">אני מאשר/ת יצירת קשר ומסירת הפרטים לצורך מתן השירות. הפרטים נשמרים בסודיות מקצועית וחיסיון רו״ח.</label>
+        </div>
+        <button class="btn btn--gold" type="submit">שליחה</button>
+      </div>
+      <div class="form-success" role="status">
+        <h3>תודה! פנייתכם התקבלה</h3>
+        <p>נחזור אליכם באותו יום עסקים. לשיחה מיידית: <span class="num" dir="ltr">052-774-2312</span>.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 6. פוטר ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <nav class="footer__col" aria-label="שירותי ראיית חשבון והנהלת חשבונות">
+        <h3>שירותי ראיית חשבון והנהלת חשבונות</h3>
+        <ul>
+          <li><a href="#s-accounting">ראיית חשבון</a></li>
+          <li><a href="#s-bookkeeping">הנהלת חשבונות</a></li>
+          <li><a href="#s-tax">ייעוץ מס</a></li>
+          <li><a href="#s-payroll">חשבות שכר</a></li>
+          <li><a href="#s-newbusiness">הקמת עסק חדש</a></li>
+          <li><a href="#s-department">פיתוח מחלקת הנהלת חשבונות</a></li>
+          <li><a href="#s-loans">הלוואות בערבות המדינה</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="ייעוץ עסקי פיננסי">
+        <h3>ייעוץ עסקי פיננסי</h3>
+        <ul>
+          <li><a href="#c-map">מודל מפה – ייעוץ עסקי טורבו</a></li>
+          <li><a href="#c-11">ליווי וייעוץ עסקי פיננסי <span class="num">1:1</span></a></li>
+          <li><a href="#c-gaps">בדיקת חוסרים בהנהלת חשבונות</a></li>
+          <li><a href="financial_health_ai_rabia_shakour.html">בדיקת בריאות פיננסית לעסק</a></li>
+        </ul>
+        <h3 style="margin-top:var(--sp-5)">אקדמיה</h3>
+        <ul>
+          <li><a href="#academy">תכנים והדרכות</a></li>
+          <li><a href="#media">מן התקשורת</a></li>
+          <li><a href="#contact">צור קשר</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="טיפים מקצועיים">
+        <h3>טיפים מקצועיים שיגרמו לכם להרוויח יותר</h3>
+        <ul>
+          <li><a href="#tips">איך לבחור רואה חשבון?</a></li>
+          <li><a href="#tips">הפעולות הכי חשובות לפני פתיחת עסק</a></li>
+          <li><a href="#tips">תזרים מזומנים</a></li>
+          <li><a href="#tips">איך מגדילים רווחים בעסק</a></li>
+          <li><a href="#tips">התנהלות פיננסית נכונה</a></li>
+          <li><a href="#tips">הלוואות והתנהגות מול הבנק</a></li>
+          <li><a href="#tips">מסעדנות</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <div class="footer__brand">
+          <a class="logo" href="#top" aria-label="משרד רו״ח רביע שקור – חזרה לראש העמוד">
+            <img class="logo__mark" src="logo-mark-112.png" width="112" height="112" alt="" loading="lazy" decoding="async">
+            <span class="logo__text">
+              <span class="logo__name">רביע שקור · משרד רואי חשבון</span>
+              <span class="logo__tag">RABEA SHAKOUR · C.P.A OFFICE</span>
+            </span>
+          </a>
+          <p style="margin:0">
+            רחוב העצמאות 1, רמת גן<br>
+            <a class="num" href="tel:+972527742312">052-774-2312</a>
+          </p>
+          <a class="btn btn--gold" href="#contact">לפגישת ייעוץ ←</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer">
+      המידע בעמוד הוא כללי ואינו מהווה ייעוץ מס או ייעוץ משפטי, ואין בו תחליף לייעוץ מקצועי פרטני.
+    </p>
+
+    <div class="footer__bottom">
+      <p>© <span class="num" id="year">2026</span> משרד רו״ח רביע שקור. כל הזכויות שמורות.</p>
+      <p><a href="index-new.html">האתר המלא – שירותים לשכירים ולהחזרי מס</a> · <a href="#top">חזרה לראש העמוד ↑</a></p>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/972527742312" target="_blank" rel="noopener" aria-label="שליחת הודעת WhatsApp למשרד">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.3-.1-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 1.9 3 4.7 4.2 2.3 1 2.8.8 3.3.8.5 0 1.6-.6 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.3zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2z"/></svg>
+</a>
+
+<script>
+(function () {
+  "use strict";
+
+  var yearEl = document.getElementById("year");
+  if (yearEl) { yearEl.textContent = String(new Date().getFullYear()); }
+
+  /* ---------- תפריט מובייל ---------- */
+  var burger = document.getElementById("burger");
+  var mobileNav = document.getElementById("mobile-nav");
+  var iconOpen = document.getElementById("burger-open");
+  var iconClose = document.getElementById("burger-close");
+
+  function setMenu(open) {
+    if (!burger || !mobileNav) { return; }
+    mobileNav.hidden = !open;
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.setAttribute("aria-label", open ? "סגירת תפריט" : "פתיחת תפריט");
+    if (iconOpen) { iconOpen.hidden = open; }
+    if (iconClose) { iconClose.hidden = !open; }
+  }
+  if (burger && mobileNav) {
+    burger.addEventListener("click", function () { setMenu(mobileNav.hidden); });
+    mobileNav.addEventListener("click", function (e) { if (e.target.closest("a")) { setMenu(false); } });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !mobileNav.hidden) { setMenu(false); burger.focus(); }
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 1001 && !mobileNav.hidden) { setMenu(false); }
+    });
+  }
+
+  /* ---------- סימון הקישור הפעיל ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('#primary-nav .nav__link[href^="#"]'));
+  var sections = navLinks.map(function (a) { return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+  if ("IntersectionObserver" in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) { return; }
+        navLinks.forEach(function (a) {
+          if (a.getAttribute("href") === "#" + entry.target.id) { a.setAttribute("aria-current", "true"); }
+          else { a.removeAttribute("aria-current"); }
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ---------- ולידציה ופידבק לטפסים ---------- */
+  Array.prototype.slice.call(document.querySelectorAll('form[action="#"]')).forEach(function (form) {
+    Array.prototype.slice.call(form.querySelectorAll("[required]")).forEach(function (f) {
+      var clear = function () { var w = f.closest(".field"); if (w) { w.classList.remove("field--error"); } };
+      f.addEventListener("input", clear);
+      f.addEventListener("change", clear);
+    });
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        Array.prototype.slice.call(form.querySelectorAll("[required]")).forEach(function (f) {
+          var w = f.closest(".field");
+          if (w && !f.checkValidity()) { w.classList.add("field--error"); }
+        });
+        var firstBad = form.querySelector(".field--error input, .field--error textarea");
+        if (firstBad) { firstBad.focus(); }
+        return;
+      }
+      form.classList.add("is-sent");
+      form.reset();
+    });
+  });
+
+  /* ---------- מצב aria לתתי-תפריטים ---------- */
+  Array.prototype.slice.call(document.querySelectorAll(".nav__item")).forEach(function (item) {
+    var link = item.querySelector(".nav__link");
+    if (!link || !item.querySelector(".submenu")) { return; }
+    link.addEventListener("focus", function () { link.setAttribute("aria-expanded", "true"); });
+    item.addEventListener("focusout", function (e) {
+      if (!item.contains(e.relatedTarget)) { link.setAttribute("aria-expanded", "false"); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
