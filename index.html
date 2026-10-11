@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>רביע שקור | משרד רואי חשבון – שירותי ראיית חשבון והנהלת חשבונות</title>
-<meta name="description" content="משרד רו״ח רביע שקור – שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס, חשבות שכר, הקמת עסק חדש, פיתוח מחלקת הנהלת חשבונות והלוואות בערבות המדינה, לצד ייעוץ וליווי עסקי־פיננסי ואקדמיה.">
+<title>רביע שקור | משרד רואי חשבון – שירותי ראיית חשבון והנהלת חשבונות בחיפה</title>
+<meta name="description" content="משרד רו״ח רביע שקור בחיפה – שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס, חשבות שכר, הקמת עסק חדש והלוואות בערבות המדינה, לצד ייעוץ וליווי עסקי־פיננסי ואקדמיה.">
 <meta name="theme-color" content="#0B1F3A">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://chr-cpa.co.il/">
@@ -20,7 +20,7 @@
   "@context": "https://schema.org",
   "@type": "AccountingService",
   "name": "משרד רו״ח רביע שקור",
-  "description": "שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס, חשבות שכר, הקמת עסק חדש, פיתוח מחלקת הנהלת חשבונות, הלוואות בערבות המדינה וייעוץ וליווי עסקי־פיננסי.",
+  "description": "שירותי ראיית חשבון, הנהלת חשבונות, ייעוץ מס, חשבות שכר, הקמת עסק חדש, פיתוח מחלקת הנהלת חשבונות, הלוואות בערבות המדינה וייעוץ וליווי עסקי־פיננסי בחיפה.",
   "url": "https://chr-cpa.co.il/",
   "telephone": "+972-52-774-2312",
   "email": "Rabeia@chr-cpa.co.il",
@@ -28,7 +28,7 @@
   "areaServed": "IL",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "סירקין 15 ",
+    "streetAddress": "סירקין 15",
     "addressLocality": "חיפה",
     "addressCountry": "IL"
   },
@@ -108,7 +108,7 @@ h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
 .section--tight{padding-block:var(--sp-6)}
 .lead{font-size:var(--fs-lead); color:var(--muted); line-height:1.65}
 
-/* כותרת מקטע ממורכזת עם קו זהב — כמו באתר הייחוס */
+/* כותרת מקטע ממורכזת עם קו זהב */
 .shead{max-width:760px; margin:0 auto var(--sp-6); text-align:center}
 .shead h2{margin-bottom:0}
 .shead .rule{display:block; width:150px; height:3px; margin:16px auto 0; border-radius:2px;
@@ -234,25 +234,25 @@ h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
 .team{display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-4); margin:0}
 .team figure{margin:0; text-align:center}
 
+/* Team images styling and targeted position fix */
 .team img{
   width: 100%; 
   aspect-ratio: 4/5; 
   object-fit: cover; 
-  object-position: center; /* Default for the first image */
+  object-position: center 30%; 
   border-radius: var(--radius-sm); 
   border: 1px solid var(--border); 
   background: var(--grey-100);
 }
-
-/* Specifically shift the crop for the second image (team member on the right) */
 .team figure img {
-  object-position: 70% 30%; /* Change the 70% (left/right) to shift where the crop focuses */
+  object-position: 70% 30%; /* Shifts crop for the second team member image to show face */
 }
 
 .team figcaption{margin-top:12px}
 .team .tname{display:block; font-family:var(--font-head); font-weight:700; color:var(--ink-900); font-size:1.0313rem}
 .team .trole{display:block; font-size:var(--fs-small); color:var(--muted); margin-top:2px}
 .about__cta{display:flex; justify-content:center; margin-top:var(--sp-6)}
+
 /* ============================== צור קשר (רקע כהה) */
 .contact{
   position:relative; color:var(--inverse); padding-block:var(--sp-7);
@@ -370,7 +370,7 @@ h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
   <div class="container topbar__in">
     <div class="topbar__left">
       <a class="logo" href="#top" aria-label="משרד רו״ח רביע שקור – חזרה לראש העמוד">
-        <img class="logo__mark" src="logo-mark-112.png" width="112" height="112" alt="" decoding="async">
+        <img class="logo__mark" src="logo-mark-112.png" width="112" height="112" alt="לוגו משרד רואי חשבון רביע שקור" decoding="async">
         <span class="logo__text">
           <span class="logo__name">רביע שקור · משרד רואי חשבון</span>
           <span class="logo__tag">RABEA SHAKOUR · C.P.A OFFICE</span>
@@ -728,7 +728,7 @@ h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
         <div class="team">
           <figure>
             <img src="https://raw.githubusercontent.com/basiljhs/acc_site/refs/heads/main/images/_T3A9038.jpg" width="720" height="480" loading="lazy" decoding="async"
-                 alt="רואה החשבון של המשרד בשיחת טלפון עם לקוח">
+                 alt="רואה החשבון רביע שקור בשיחת טלפון עם לקוח במשרד בחיפה">
             <figcaption>
               <span class="tname">רו״ח רביע שקור</span>
               <span class="trole">שותף מייסד</span>
@@ -786,7 +786,7 @@ h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
         </li>
         <li>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-4.6-7-10a7 7 0 1114 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
-          <address>סירקין 15 , חיפה</address>
+          <address>סירקין 15, חיפה</address>
         </li>
       </ul>
     </div>
@@ -883,7 +883,7 @@ h1,h2,h3,h4,p,li,summary,address,figcaption{overflow-wrap:break-word}
             </span>
           </a>
           <p style="margin:0">
-            סירקין 15 , חיפה<br>
+            סירקין 15, חיפה<br>
             <a class="num" href="tel:+972527742312">052-774-2312</a>
           </p>
           <a class="btn btn--gold" href="#contact">לפגישת ייעוץ ←</a>
